@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 
 //components
-import HeaderStats from "components/Headers/HeaderStats.js";
+import HeaderStats from "components/Headers/HeaderStatsSociety.js";
 import UserSidebar from "components/Sidebar/UserSidebar.js"
 import FooterAdmin from "components/Footers/FooterAdmin.js"
 import Navbar from "components/Navbars/AuthNavbar.js";
