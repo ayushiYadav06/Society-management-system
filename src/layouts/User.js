@@ -16,7 +16,7 @@ import Event from "views/user/Event.js";
 import CreateEvent from "views/user/CreateEvent";
 import CreateComplaint from "views/user/CreateComplaint";
 import CreateServices from "views/user/CreateServices"
-
+import ServicesTable from "views/user/ServicesTable";
 export default function User() {
 return (
     <>
@@ -36,6 +36,7 @@ return (
                 <Route path="/user/createEvent" exact component={CreateEvent} />
                 <Route path="/user/createComplaint" exact component={CreateComplaint} />
                 <Route path="/user/createServices" exact component={CreateServices} />
+                <Route path="/user/servicesTable" exact component={ServicesTable} />
 
 
 

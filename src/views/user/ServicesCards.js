@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import ServicesTable from "./ServicesTable";
 export default function ServicesCards() {
 return (
     <>
     <main>
-      <Link to="/payment">
+      <Link to="ServicesTable">
         <section className="pb-20 bg-blueGray-200 pt-20 ">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap">
@@ -22,7 +22,7 @@ return (
 
               <div className="w-full md:w-4/12 px-4 text-center">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-                  <div className="px-4 py-5 flex-auto">
+                  <div className="px-4 py-5 flex-auto" onClick={<ServicesTable color="dark" />}>
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-lightBlue-400">
                       <i className="fas fa-tools"></i>
                     </div>
