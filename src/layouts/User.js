@@ -15,7 +15,7 @@ import Services from "views/user/Services.js";
 import Event from "views/user/Event.js";
 import CreateEvent from "views/user/CreateEvent";
 import CreateComplaint from "views/user/CreateComplaint";
-
+import CreateServices from "views/user/CreateServices"
 
 export default function User() {
 return (
@@ -35,6 +35,8 @@ return (
                 <Route path="/user/events" exact component={Event} />
                 <Route path="/user/createEvent" exact component={CreateEvent} />
                 <Route path="/user/createComplaint" exact component={CreateComplaint} />
+                <Route path="/user/createServices" exact component={CreateServices} />
+
 
 
                 <Redirect from="/auth" to="/auth/login" />
