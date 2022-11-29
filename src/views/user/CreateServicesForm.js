@@ -40,11 +40,17 @@ export default function CreateServicesForm({ color }) {
                 </div>
                 <div className="row py-4 px-2">
                     <div className="col-2">
-                        <label>icons :</label>
+                        <label>Icons :</label>
                     </div>
-                    <div className="col-10">
+                    <div className="col-10 text-black">
                       <select>
-                        <option data-content =" fas fa-home">hiking</option>
+                        <option>Healthcare</option>
+                        <option>Food</option>
+                        <option>Transportation</option>
+                        <option>Education</option>
+                        <option>Business</option>
+                        <option>Money</option>
+
                       </select>
                     </div>
                 </div>

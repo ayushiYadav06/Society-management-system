@@ -135,6 +135,28 @@ export default function UserSidebar() {
                 <Link
                   className={
                     "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/user/createServices") !== -1
+                      ? "text-lightBlue-500 hover:text-lightBlue-600"
+                      : "text-blueGray-700 hover:text-blueGray-500")
+                  }
+                  to="/user/createServices"
+                >
+                  <i
+                    className={
+                      "fas fa-plus mr-2 text-sm " +
+                      (window.location.href.indexOf("/user/createServices") !== -1
+                        ? "opacity-75"
+                        : "text-blueGray-300")
+                    }
+                  ></i>{" "}
+                  Create service
+                </Link>
+              </li>
+
+              <li className="items-center">
+                <Link
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
                     (window.location.href.indexOf("/user/events") !== -1
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
@@ -153,27 +175,6 @@ export default function UserSidebar() {
                 </Link>
               </li>
 
-              <li className="items-center">
-                <Link
-                  className={
-                    "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/user/complaints") !== -1
-                      ? "text-lightBlue-500 hover:text-lightBlue-600"
-                      : "text-blueGray-700 hover:text-blueGray-500")
-                  }
-                  to="/user/complaints"
-                >
-                  <i
-                    className={
-                      "fas fa-file-alt mr-2 text-sm " +
-                      (window.location.href.indexOf("/user/complaints") !== -1
-                        ? "opacity-75"
-                        : "text-blueGray-300")
-                    }
-                  ></i>{" "}
-                  Complaints
-                </Link>
-              </li>
 
               <li className="items-center">
                 <Link
@@ -196,6 +197,29 @@ export default function UserSidebar() {
                   Create event
                 </Link>
               </li>
+              <li className="items-center">
+                <Link
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/user/complaints") !== -1
+                      ? "text-lightBlue-500 hover:text-lightBlue-600"
+                      : "text-blueGray-700 hover:text-blueGray-500")
+                  }
+                  to="/user/complaints"
+                >
+                  <i
+                    className={
+                      "fas fa-file-alt mr-2 text-sm " +
+                      (window.location.href.indexOf("/user/complaints") !== -1
+                        ? "opacity-75"
+                        : "text-blueGray-300")
+                    }
+                  ></i>{" "}
+                  Complaints
+                </Link>
+              </li>
+
+              
 
               <li className="items-center">
                 <Link
@@ -219,27 +243,7 @@ export default function UserSidebar() {
                 </Link>
               </li>
 
-              <li className="items-center">
-                <Link
-                  className={
-                    "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/user/createServices") !== -1
-                      ? "text-lightBlue-500 hover:text-lightBlue-600"
-                      : "text-blueGray-700 hover:text-blueGray-500")
-                  }
-                  to="/user/createServices"
-                >
-                  <i
-                    className={
-                      "fas fa-plus mr-2 text-sm " +
-                      (window.location.href.indexOf("/user/createServices") !== -1
-                        ? "opacity-75"
-                        : "text-blueGray-300")
-                    }
-                  ></i>{" "}
-                  Create Complaint
-                </Link>
-              </li>
+              
               
               
             </ul>
