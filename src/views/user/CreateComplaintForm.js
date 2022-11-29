@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import '../../assets/styles/styles.css';
 
 
-export default function CreateEventForm({ color }) {
+export default function CreateComplaintForm({ color }) {
     return (
     <>
     <div
@@ -22,7 +22,7 @@ export default function CreateEventForm({ color }) {
                         (color === "light" ? "text-blueGray-700" : "text-white")
                         }
                     >
-                    Create Event
+                    Create Complaint
                     </h3>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ export default function CreateEventForm({ color }) {
                         <label>Title :</label>
                     </div>
                     <div className="col-10">
-                        <input className="form-control" placeholder="Event title..."></input>
+                        <input className="form-control" placeholder="Complaint"></input>
                     </div>
                 </div>
                 <div className="row py-4 px-2">
@@ -42,49 +42,28 @@ export default function CreateEventForm({ color }) {
                         <label>Description :</label>
                     </div>
                     <div className="col-10">
-                        <textarea className="form-control" placeholder="Describe here"></textarea>
+                        <textarea className="form-control" placeholder="Describe...."></textarea>
                     </div>
                 </div>
-                <div className="row py-4 px-2">
-                    <div className="col-2">
-                        <label>Date :</label>
-                    </div>
-                    <div className="col-4">
-                        <input type="date" className="form-control" ></input>
-                    </div>
-                    <div className="col-2">
-                        <label>Time : </label>
-                    </div>
-                    <div className="col-4">
-                        <input className="form-control" placeholder="Approx. start time"></input>
-                    </div>
-                </div>
-                <div className="row py-4 px-2 --bs-dark">
-                    <div className="col-2">
-                        <label>Venue :</label>
-                    </div>
-                    <div className="col-10">
-                        <input className="form-control" placeholder="Event venue"></input>
-                    </div>
-                </div>
-            </div>
 
-            <div className="row py-4 px-2 text-center">
+                <div className="row py-4 px-2 text-center">
                     <div className="col-5"></div>
                     <button className="col-2 form-control" type="submit">Submit </button>
                     <div className="col-5"></div>
 
                 </div>
+                
+            </div>
     </div>
         
     </>
     );
 }
 
-CreateEventForm.defaultProps = {
+CreateComplaintForm.defaultProps = {
     color: "light",
 };
 
-CreateEventForm.propTypes = {
+CreateComplaintForm.propTypes = {
     color: PropTypes.oneOf(["light", "dark"]),
 };

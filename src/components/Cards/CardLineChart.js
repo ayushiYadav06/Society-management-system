@@ -126,6 +126,7 @@ export default function CardLineChart() {
           </div>
         </div>
       </div>
+      
     </>
   );
 }
