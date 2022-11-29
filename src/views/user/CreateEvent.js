@@ -1,5 +1,5 @@
 import React from 'react'
-import CreateEventForm from "./CreateEventForm.js";
+import CreateSocietyForm from "../user/CreateEventForm";
 
 
 function CreateEvent() {
@@ -7,7 +7,7 @@ return (
 <>
     <div className="flex flex-wrap mt-4">
         <div className="w-full mb-12 px-4">
-            <CreateEventForm color="dark" />
+            <CreateSocietyForm color="dark" />
         </div>
         </div>
 </>

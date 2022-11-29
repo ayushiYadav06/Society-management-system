@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Container, Row } from "react-bootstrap";
+import '../../assets/styles/styles.css';
+
 
 export default function CreateSocietyForm({ color }) {
     return (
@@ -25,41 +26,39 @@ export default function CreateSocietyForm({ color }) {
                     </div>
                 </div>
             </div>
-            <Container className="p-5 bg-lightBlue-900 text-white">
-            <div className="block w-full overflow-x-auto">
-            {/* Projects table */}
-            <Row className="p-2">
-            <div>
-                <label>Society Name : </label>
-                <input type="text" placeholder="Society Name" />
-            </div>
-            </Row>
-            <Row className="p-2">
-            <div>
-                <label>Society Address : </label>
-                <input type="text" placeholder="Society address" />
-            </div>
-            </Row>
-            <Row className="p-2">
-            <div>
-                <label>Name : </label>
-                <input type="text" placeholder="Admin Name" />
-            </div>
-            </Row>
-            <Row className="p-2">
-            <div>
-                <label>Phone Number : </label>
-                <input type="text" placeholder="Admin Contact Number" />
-            </div>
-            </Row>
-            <Row className="p-2">
-            <div> 
-                <button  className="bg-lightBlue-600 text-white p-2 rounded">Create Society</button>
-            </div>
-            </Row>
+            <div className="container bg-lightBlue-900 text-white p-4">
+                <div className="row py-4 px-2">
+                    <div className="col-2">
+                        <label>Society Name :</label>
+                    </div>
+                    <div className="col-10">
+                        <input type="text" className="form-control" placeholder="Society name..."></input>
+                    </div>
+                </div>
+                <div className="row py-4 px-2">
+                    <div className="col-2">
+                        <label>Society Address :</label>
+                    </div>
+                    <div className="col-10">
+                        <textarea type="text" className="form-control" placeholder="Address"></textarea>
+                    </div>
+                </div>
+                <div className="row py-4 px-2">
+                    <div className="col-2">
+                        <label>Name :</label>
+                    </div>
+                    <div className="col-4">
+                        <input type="text" className="form-control" placeholder="Client name"></input>
+                    </div>
+                    <div className="col-2">
+                        <label>Contact number :  </label>
+                    </div>
+                    <div className="col-4">
+                        <input className="form-control" placeholder="Phone number"></input>
+                    </div>
+                </div>
                 
             </div>
-            </Container>
     </div>
         
     </>

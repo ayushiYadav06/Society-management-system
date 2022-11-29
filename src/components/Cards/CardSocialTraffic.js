@@ -23,6 +23,8 @@ export default function CardSocialTraffic() {
             </div>
           </div>
         </div>
+
+
         <div className="block w-full overflow-x-auto">
           {/* Projects table */}
           <table className="items-center w-full bg-transparent border-collapse">
@@ -146,6 +148,8 @@ export default function CardSocialTraffic() {
             </tbody>
           </table>
         </div>
+
+        
       </div>
     </>
   );
