@@ -23,7 +23,7 @@ setUser({...user , [name]:value})
             
               <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
                 <div className="text-blueGray-400 text-center mb-3 font-bold font-size-40% ">
-                  <h1 className="fs-1">SIGN UP</h1>
+                  <h1 className="fs-1 py-4">SIGN UP</h1>
                 </div>
                 <form>
                   <div className="relative w-full mb-3">

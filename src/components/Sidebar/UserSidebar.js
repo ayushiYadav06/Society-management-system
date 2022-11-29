@@ -109,6 +109,8 @@ export default function UserSidebar() {
                 </Link>
               </li>
 
+              
+
               <li className="items-center">
                 <Link
                   className={
@@ -127,7 +129,7 @@ export default function UserSidebar() {
                         : "text-blueGray-300")
                     }
                   ></i>{" "}
-                  Payment History
+                  Payments History
                 </Link>
               </li>
 

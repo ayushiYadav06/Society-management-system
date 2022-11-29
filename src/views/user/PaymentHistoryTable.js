@@ -25,6 +25,7 @@ export default function PaymentHistoryTable({ color }) {
                 >
                     Payments History
                 </h3>
+                
                 <div className="container pt-4">
                     <div className="row">
                         

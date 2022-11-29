@@ -3,7 +3,7 @@ import "assets/styles/tailwind.css";
 
 import PaymentHistoryTable from "./PaymentHistoryTable.js";
 
-export default function Tables() {
+export default function PaymentHistory() {
     return (
         <>
         <div className="flex flex-wrap">
@@ -11,7 +11,7 @@ export default function Tables() {
                 <div className="relative bg-lightBlue-900 pt-16 pb-16 flex content-center items-center justify-center min-h-screen-25">
                     <div className="text-center">
                         <h1 className="text-white font-semibold text-5xl">
-                            Payments
+                            Payment History
                         </h1>
                     </div>
                 </div>
