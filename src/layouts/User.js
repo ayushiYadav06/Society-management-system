@@ -15,8 +15,14 @@ import Services from "views/user/Services.js";
 import Event from "views/user/Event.js";
 import CreateEvent from "views/user/CreateEvent";
 import CreateComplaint from "views/user/CreateComplaint";
+<<<<<<< HEAD
 import CreateServices from "views/user/CreateServices"
 import ServicesTable from "views/user/ServicesTable";
+=======
+import CreateServices from "views/user/CreateServices";
+import PaymentHistory from "views/user/PaymentHistory";
+
+>>>>>>> 6e5b052400e026e4007e1975895376fe4532a752
 export default function User() {
 return (
     <>
@@ -36,8 +42,12 @@ return (
                 <Route path="/user/createEvent" exact component={CreateEvent} />
                 <Route path="/user/createComplaint" exact component={CreateComplaint} />
                 <Route path="/user/createServices" exact component={CreateServices} />
+<<<<<<< HEAD
                 <Route path="/user/servicesTable" exact component={ServicesTable} />
 
+=======
+                <Route path="/user/paymentHistory" exact component={PaymentHistory} />
+>>>>>>> 6e5b052400e026e4007e1975895376fe4532a752
 
 
                 <Redirect from="/auth" to="/auth/login" />
