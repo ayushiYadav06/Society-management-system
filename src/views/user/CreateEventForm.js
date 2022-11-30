@@ -67,6 +67,15 @@ export default function CreateEventForm({ color }) {
                         <input className="form-control" placeholder="Event venue"></input>
                     </div>
                 </div>
+
+                <div className="row py-4 px-2 --bs-dark">
+                    <div className="col-2">
+                        <label>Image</label>
+                    </div>
+                    <div className="col-10">
+                        <input  type="file" className="form-control" placeholder="Event venue"></input>
+                    </div>
+                </div>
             </div>
 
             <div className="row py-4 px-2 text-center">

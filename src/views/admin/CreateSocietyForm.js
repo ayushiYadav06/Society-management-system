@@ -56,6 +56,13 @@ export default function CreateSocietyForm({ color }) {
                     <div className="col-4">
                         <input className="form-control" placeholder="Phone number"></input>
                     </div>
+
+                </div>
+                <div className="row py-4 px-2 text-center">
+                    <div className="col-5"></div>
+                    <button className="col-2 form-control" type="submit">Submit </button>
+                    <div className="col-5"></div>
+
                 </div>
                 
             </div>
